@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>গ্রাফিক্যাল লকার</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="locker-container">
+        <div class="locker">
+            <h2>গ্রাফিক্যাল লকার</h2>
+            <input type="password" id="passwordInput" class="password-input" disabled>
+            <div id="message" class="message"></div>
+            <div class="keyboard">
+                <button class="key" onclick="enterKey(1)">1</button>
+                <button class="key" onclick="enterKey(2)">2</button>
+                <button class="key" onclick="enterKey(3)">3</button>
+                <button class="key" onclick="enterKey(4)">4</button>
+                <button class="key" onclick="enterKey(5)">5</button>
+                <button class="key" onclick="enterKey(6)">6</button>
+                <button class="key" onclick="enterKey(7)">7</button>
+                <button class="key" onclick="enterKey(8)">8</button>
+                <button class="key" onclick="enterKey(9)">9</button>
+                <button class="key" onclick="enterKey(0)">0</button>
+                <button class="key" onclick="backspace()">←</button>
+                <button class="key" onclick="clearInput()">C</button>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown()">About</button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <p><strong>পাসওয়ার্ড এর পরিধি এই লকারের চাবি তবে আপনাকে উল্টো ভাবে কাউন্ট করতে হবে।</strong></p>
+                    <p>পুরস্কার ৫০০ টাকা রেজাল্ট দেওয়া হবে জানুয়ারির ৯ তারিখে।</p>
+                    <p>তৈরি করেছেন: মোহাম্মদ আসিফ আহমেদ</p>
+                    <span class="close-btn" onclick="toggleDropdown()">×</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
